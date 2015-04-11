@@ -10,4 +10,4 @@ echo ( "Update started!" );
 if ( $_POST['payload'] ) {
   chdir($_SERVER['PHP_SELF']);
   exec('git reset --hard HEAD && git pull');
-} else echo ($_POST);
+} else echo (print_r($_POST, true));
