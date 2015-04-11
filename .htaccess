@@ -1,0 +1,7 @@
+Options -Indexes
+RewriteEngine on
+RewriteBase /
+
+### if no path, use domain name file
+RewriteRule ^/?$ %{SERVER_NAME}.html [L]
+ 
