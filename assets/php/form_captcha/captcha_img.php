@@ -1,4 +1,10 @@
 <?php
+
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(-1);
+
+
 session_start(); // Staring Session
 $captchanumber = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz'; // Initializing PHP variable with string
 $captchanumber = substr(str_shuffle($captchanumber), 0, 6); // Getting first 6 word after shuffle.
@@ -17,7 +23,7 @@ $_SESSION["captcha_code"] = $captchanumber; // Initializing session variable wit
     );
     $font_dir = 'fonts/';
     $font = $font_dir . $fonts[0];
-    
+
     $font_colour = imagecolorallocate($image, 255, 255, 255); // Font Color
     $font_size = 55;
 
@@ -28,4 +34,3 @@ $_SESSION["captcha_code"] = $captchanumber; // Initializing session variable wit
 
     header('Content-type: image/png');
     imagepng($image);
-?>
