@@ -7,8 +7,8 @@ error_reporting(-1);
 /* =====================================================
  * change $email_to and $email_form
  * ===================================================== */
-$email_to = "chadananda@gmail.com"; // the email address to which the form sends submissions
-$email_from = "do-not-reply@aahh.com"; // the email address used as "From" when submissions are sent to the $email_to above (important that it has the same domain as the domain of your site - unless you have configured your server's mail settings)
+$email_to = "root"; // the email address to which the form sends submissions
+$email_from = "parking@aahh.com"; // the email address used as "From" when submissions are sent to the $email_to above (important that it has the same domain as the domain of your site - unless you have configured your server's mail settings)
 $email_subject = "Parking Inquiry Contact Form submitted";
 
 // check CAPTCHA code first
