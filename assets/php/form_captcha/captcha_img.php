@@ -6,7 +6,7 @@
 
 
 session_start(); // Staring Session
-$captchanumber = '1234567890abcd'; // Initializing PHP variable with string
+$captchanumber = '12356788889999990ab'; // Initializing PHP variable with string
 $captchanumber = substr(str_shuffle($captchanumber), 0, 5); // Getting first 6 word after shuffle.
 $_SESSION["captcha_code"] = $captchanumber; // Initializing session variable with above generated sub-string
 
